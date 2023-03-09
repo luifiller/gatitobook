@@ -1,6 +1,8 @@
 # Gatitobook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+This project is the result of learning from [Alura's Angular course](https://cursos.alura.com.br/course/angular-boas-praticas-arquiteturas-formularios) and was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+
+Objectively, this project is a social network for posting pictures of cats (gatitos), in which you can comment and react to these posts.
 
 ## Development server
 
