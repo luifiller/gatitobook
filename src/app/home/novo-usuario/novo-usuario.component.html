@@ -49,6 +49,11 @@
       "
       mensagem="Nome de usuário deve ser em letra minúscula"
     ></app-mensagem>
+
+    <app-mensagem
+      *ngIf="novoUsuarioForm.get('userName')?.errors?.['usuarioExistente']"
+      mensagem="Usuário já existe"
+    ></app-mensagem>
   </div>
 
   <div class="form-group">
@@ -64,7 +69,7 @@
       novoUsuarioForm.get('password')?.touched
       "
       mensagem="Senha obrigatória"
-      ></app-mensagem>
+    ></app-mensagem>
   </div>
 
   <button class="btn btn-primary btn-block">Cadastrar</button>
