@@ -66,9 +66,14 @@
 
     <app-mensagem
       *ngIf="novoUsuarioForm.get('password')?.errors?.['required'] &&
-      novoUsuarioForm.get('password')?.touched
-      "
+    novoUsuarioForm.get('password')?.touched
+    "
       mensagem="Senha obrigatória"
+    ></app-mensagem>
+
+    <app-mensagem
+      *ngIf="novoUsuarioForm.errors?.['senhaIgualUsuario']"
+      mensagem="Senha deve ser diferente do usuário."
     ></app-mensagem>
   </div>
 
